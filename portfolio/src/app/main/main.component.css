@@ -1,0 +1,35 @@
+
+.mainLink-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.mainLink{
+    color: red;
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+    .mainLink img{
+    width: 250px;
+    height: 160px;
+}
+    .mainLink p{
+     ;
+}
+.mainLink:hover{
+    background-color: blue;
+cursor: pointer;
+}
+
+.main-text{
+text-align: center;
+font-size: 30px;
+
+}
