@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { WorkComponent } from './work/work.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { CoursesComponent } from './courses/courses.component';
+import { ChannelComponent } from './channel/channel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CoursesComponent } from './courses/courses.component';
     MainComponent,
     WorkComponent,
     HobbiesComponent,
-    CoursesComponent
+    CoursesComponent,
+    ChannelComponent
   ],
   imports: [
     BrowserModule,
