@@ -9,7 +9,7 @@ export class MeeskondComponent implements OnInit {
   //vasakul pool muutuja "võtab" väärtst
   //paremal pool antakse väärtust
    muutuja = "SEE ON MUUTUJA VÄÄRTUS";
-   list = ["yks", "kaks", "kolm"];
+   members = ["Tõnu", "Kaarel", "Pille", "Joonas"];
 
   constructor() { }
 

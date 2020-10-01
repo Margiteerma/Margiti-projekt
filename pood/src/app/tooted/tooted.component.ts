@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tooted.component.css']
 })
 export class TootedComponent implements OnInit {
+  products = [
+    {name: "Boots", price: 300, color: "white"}, 
+    {name: "Shirt", price: 300, color: "black"}, 
+    {name: "Hat", price: 300, color: "red"},
+  ];
 
   constructor() { }
 
