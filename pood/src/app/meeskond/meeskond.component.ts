@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MeeskondService } from '../meeskond.service';
 
 @Component({
   selector: 'app-meeskond',
@@ -9,11 +10,12 @@ export class MeeskondComponent implements OnInit {
   //vasakul pool muutuja "võtab" väärtst
   //paremal pool antakse väärtust
    muutuja = "SEE ON MUUTUJA VÄÄRTUS";
-   members = ["Tõnu", "Kaarel", "Pille", "Joonas"];
+   members;
 
-  constructor() { }
+  constructor(private meeskond: MeeskondService) { }
 
   ngOnInit(): void {
+    this.members = this.meeskond.membersFromService; 
   }
 
 }
