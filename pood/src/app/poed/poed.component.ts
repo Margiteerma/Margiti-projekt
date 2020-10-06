@@ -7,17 +7,17 @@ import { PoedService } from '../poed.service';
   styleUrls: ['./poed.component.css']
 })
 export class PoedComponent implements OnInit {
+  shop: { location: String; time: String; };
+  shops;
 
-  shops = [
-    {location: "Narva mnt 7", time: "9-17"}, 
-    {location: "Toompuiestee 8", time: "9-18"}, 
-    {location: "Liivalaia 15", time: "9-20"}
-  ];
+  constructor(private poedService: PoedService) {
 
-  constructor(private poedService: PoedService) { }
+   }
 
   ngOnInit(): void {
-    
+   //this.poedService.addOneShop();
+  this.shop = this.poedService.getFirsthop();
+  this.shops = this.poedService.shops;
   }
 
 }
