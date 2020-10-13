@@ -1,0 +1,32 @@
+.tooted {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.toode {
+width: 300px;
+margin: 20px;
+background-color: white;
+padding: 10px;
+border-radius: 10px;
+transform: scale(1.0);
+transition: .5s;
+}
+
+.toode:hover {
+    box-shadow: 0 10px 10px 10px rgb(7, 7, 7, 0.35);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.toode:hover img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.toode img {
+ width: 220px;
+ height: 220px; 
+ padding: 40px;  
+}

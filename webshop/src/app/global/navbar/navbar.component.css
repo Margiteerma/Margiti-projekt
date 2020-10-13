@@ -1,0 +1,18 @@
+.navriba {
+    height: 100px;
+    background-color: whitesmoke;
+    opacity: 1.0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.navriba img {
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+}
+.ostukorv {
+    margin: 25px;
+    
+}
