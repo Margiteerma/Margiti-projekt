@@ -1,0 +1,24 @@
+
+.jalus {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  height: 150px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 100px; */
+  background-color: rgb(188, 238, 238); 
+  /* display: flex; */
+  /* justify-content: space-between; */
+display: flex;
+justify-content: space-between;
+}
+
+.firmast {
+  margin: 35px;
+  }
+  .kontakt {
+    margin: 35px;
+  }
+  .müügitingimused {
+    margin: 35px;
+  }

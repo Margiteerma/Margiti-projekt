@@ -5,7 +5,7 @@ import { ItemViewComponent } from './items/item-view/item-view.component';
 
 const routes: Routes = [
   {path:"", component: ItemListComponent  },
-  {path:"item/view", component: ItemViewComponent  },
+  {path:"toode/:esemeID", component: ItemViewComponent  },
 ];
 
 @NgModule({

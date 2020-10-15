@@ -1,10 +1,9 @@
 <div class="tooted">
-    <div class="toode" *ngFor="let item of items">
+    <div class="toode" *ngFor="let item of items; let jarjekorranumber = index" 
+    [routerLink]="['toode',jarjekorranumber]">
         <div> <b>{{item.category | uppercase}}</b> </div>
         <img src="{{item.imgSrc}}">
-        <p>Toote nimetus: <br> {{item.title}} </p>
-        <div>Hind: <br>{{item.price}}</div>
-        
-        
+         <p>Toote nimetus: <br> {{item.title}} </p>
+        <div>Hind: <br>{{item.price}}</div>       
     </div>
     </div>

@@ -1,18 +1,44 @@
 .navriba {
     height: 100px;
-    background-color: whitesmoke;
+    width: 100%;
+    background-color: bisque;
     opacity: 1.0;
     display: flex;
     justify-content: space-between;
+    position: fixed; 
+    z-index: 1;
     
     
 }
 .navriba img {
     height: 50px;
     width: 50px;
-    margin: 25px;
+    margin: 15px;
 }
+ .navriba-lingid {
+     display: flex;
+     margin-right: 500px;
+      }
+
+ .navriba-lingid div {
+          margin: 40px;
+
+      }
+ .navriba-lingid div:hover {
+        text-decoration: underline;
+        cursor: pointer;
+
+    }
 .ostukorv {
-    margin: 25px;
-    
+    margin: 35px;
+
+}
+.tooted {
+    margin: 35px;
+}
+.uudised {
+    margin: 35px;
+}
+.kontakt {
+    margin: 35px;
 }
