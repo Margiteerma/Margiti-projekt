@@ -8,6 +8,7 @@ import { FooterComponent } from './global/footer/footer.component';
 import { LeftMenuComponent } from './global/left-menu/left-menu.component';
 import { ItemListComponent } from './items/item-list/item-list.component';
 import { ItemViewComponent } from './items/item-view/item-view.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ItemViewComponent } from './items/item-view/item-view.component';
     FooterComponent,
     LeftMenuComponent,
     ItemListComponent,
-    ItemViewComponent
+    ItemViewComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

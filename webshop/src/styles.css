@@ -11,5 +11,6 @@ body{
 
 * {
  font-family: 'Sansita Swashed', cursive;
- 
-}
+ outline: none;
+ }
+

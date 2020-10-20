@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from 'src/app/cart/cart.service';
 import { ItemService } from '../item.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class ItemViewComponent implements OnInit {
   item;
 
   constructor(private url: ActivatedRoute,
-    private itemService: ItemService) { }
+    private itemService: ItemService,
+    private cartService: CartService) { }
 
   ngOnInit(): void {
     this.url.params.subscribe(parameeter => {
@@ -21,4 +23,7 @@ export class ItemViewComponent implements OnInit {
     this.item = this.itemService.itemsFromService[this.id];
   }
 
+  onAddToCart() {
+    this.cartService.addItemToCart(this.item);
+  }
 }
