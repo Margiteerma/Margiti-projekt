@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
+  emptyCart() {
+    this.cartItems = []
+  }
  cartItems = [];
 
   constructor() { }
@@ -11,5 +14,9 @@ export class CartService {
   addItemToCart(cartitem) {
     this.cartItems.push(cartitem);
     console.log(this.cartItems);
+  }
+
+  deleteItem(index) {
+    this.cartItems.splice(index, 1);
   }
 }

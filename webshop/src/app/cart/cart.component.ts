@@ -15,4 +15,11 @@ export class CartComponent implements OnInit {
     this.itemsInCart = this.cartService.cartItems;
   }
 
+  onEmptyCart() {
+   this.cartService.emptyCart();
+   this.itemsInCart = this.cartService.cartItems;
+      }
+      onDeleteItem(itemIndex) {
+        this.cartService.deleteItem(itemIndex);
+      }
 }
