@@ -4,19 +4,25 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-  emptyCart() {
-    this.cartItems = []
-  }
+  
  cartItems = [];
 
   constructor() { }
 
   addItemToCart(cartitem) {
+    this.cartItems = JSON.parse(localStorage.getItem("esemed"));
     this.cartItems.push(cartitem);
-    console.log(this.cartItems);
+    localStorage.setItem("esemed", JSON.stringify(this.cartItems));
+  }
+  //!ülalolev rida hoiab väärtusi browseri mälus//
+
+  emptyCart() {
+    this.cartItems = []
+    localStorage.setItem("esemed", JSON.stringify(this.cartItems));
   }
 
   deleteItem(index) {
     this.cartItems.splice(index, 1);
+    localStorage.setItem("esemed", JSON.stringify(this.cartItems));
   }
 }
