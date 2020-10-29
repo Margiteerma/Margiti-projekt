@@ -4,3 +4,46 @@
     padding: 15px;
 
 }
+.ostukorvi-ese {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    
+}
+.tyhjenda {
+    position: absolute;
+    right: 200px;
+    top: 120px;
+}
+
+.eseme-pilt {
+    width: 150px;
+    height: 150px;
+ }
+
+.veerg {
+    width: 200px;
+    text-align: center;
+}
+
+.veerg.hind {
+    padding-top: 40px;
+}
+
+.prygikast {
+    height: 50px;
+    width: 50px;
+    padding-top: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.prygikast:hover {
+    opacity: 1.0;
+}
+
+.kokku-hind {
+    text-align: center;
+    font-size: 25px;
+}

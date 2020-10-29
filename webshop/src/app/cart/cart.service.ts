@@ -10,7 +10,7 @@ export class CartService {
   constructor() { }
 
   addItemToCart(cartitem) {
-    this.cartItems = JSON.parse(localStorage.getItem("esemed"));
+    this.cartItems = JSON.parse(localStorage.getItem("esemed")) || [];
     this.cartItems.push(cartitem);
     localStorage.setItem("esemed", JSON.stringify(this.cartItems));
   }
@@ -22,6 +22,7 @@ export class CartService {
   }
 
   deleteItem(index) {
+    this.cartItems = JSON.parse(localStorage.getItem("esemed")) || [];
     this.cartItems.splice(index, 1);
     localStorage.setItem("esemed", JSON.stringify(this.cartItems));
   }

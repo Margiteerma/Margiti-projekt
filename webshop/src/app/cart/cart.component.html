@@ -1,20 +1,23 @@
 <div *ngIf="itemsInCart.length == 0">Ostukorv on tühi</div>
-<div *ngIf="itemsInCart.length == 1">
-    Ostukorvis on {{ itemsInCart.length }} ese
-</div>
-<div *ngIf="itemsInCart.length > 1">
-    Ostukorvis on {{ itemsInCart.length }} eset
-</div>
+
 <br><br>
 
-<div *ngIf="itemsInCart.length > 0" class="ostukorvi-ala">
-    <button (click)="onEmptyCart()">Tühjenda ostukorv</button>
-    <div *ngFor="let item of itemsInCart; let i = index">
-        <img src="{{item.imgSrc}}">
-        <p>Toote nimetus: <br> {{item.title}} </p>
-        <div>Hind: <br>{{item.price}}</div> 
-        <button (click)="onDeleteItem(i)">Kustuta ostukorvist</button>
-    </div>  
-    <br><br>
-    <div>Summa kokku: {{ sumOfCart }} €</div>
+<div *ngIf="itemsInCart.length > 0">
+    <button class="nupp tyhjenda" (click)="onEmptyCart()">Tühjenda ostukorv</button>
+    <div class="ostukorvi-ala">
+        <div  class="ostukorvi-ese" *ngFor="let item of itemsInCart; let i = index">
+            <img class="eseme-pilt" src="{{item.imgSrc}}">
+            <p class="veerg">Toote nimetus: <br> {{item.title}} </p>
+            <div class="veerg hind">Hind: <br>{{item.price}}</div> 
+            <img (click)="onDeleteItem(i)" class="prygikast" src="assets\Trash.png">
+            </div>  
+        <br><br>
+        <div *ngIf="itemsInCart.length == 1">
+            Ostukorvis on {{ itemsInCart.length }} ese
+        </div>
+        <div *ngIf="itemsInCart.length > 1">
+            Ostukorvis on {{ itemsInCart.length }} eset
+        </div>
+        <div class="kokku-hind">Summa kokku: {{ sumOfCart }} €</div>
+</div>
 </div>

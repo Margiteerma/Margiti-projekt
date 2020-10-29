@@ -39,7 +39,7 @@ export class CartComponent implements OnInit {
   }
 
   getItemsFromLocalStorage() {
-    this.itemsInCart = JSON.parse(localStorage.getItem("esemed")); 
+    this.itemsInCart = JSON.parse(localStorage.getItem("esemed")) || []; 
     //selle abil oleme täitnud ostukorvi sellega, mis on meil localstorages//
   }
 
