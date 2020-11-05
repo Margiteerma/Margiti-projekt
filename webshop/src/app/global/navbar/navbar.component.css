@@ -29,6 +29,15 @@
         cursor: pointer;
 
     }
+
+   .toodete-arv {
+    background-color: green;
+    position: relative;
+    top: -30px;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-size: 20px;
+}
 .ostukorv {
     cursor: pointer;
     margin: 35px;

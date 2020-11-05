@@ -1,4 +1,4 @@
-<div class="toode">
+<div class="toode" *ngIf="item">
         <div> <b>{{item.category | uppercase}}</b> </div>
         <img src="{{item.imgSrc}}">
          <p>Toote nimetus: <br> {{item.title}} </p>

@@ -14,12 +14,21 @@ export class ItemListComponent implements OnInit {
     private cartService: CartService) { }
 
   ngOnInit(): void {
-    this.items = this.itemservice.itemsFromService;
-    console.log(this.items);
+    if (this.itemservice.itemsFromService !=null) {
+      this.items = this.itemservice.itemsFromService;
+    } else {
+    this.itemservice.fetchItems().subscribe(vastus => {
+      this.items = vastus;
+      this.itemservice.itemsFromService = this.items;
+    });
+  }
   }
 
   onAddToCart(itemToBeAdded) {
     this.cartService.addItemToCart(itemToBeAdded);
 
+  }
+  onAllToDatabase() {
+    this.itemservice.saveItems();
   }
 }

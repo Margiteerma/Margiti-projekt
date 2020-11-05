@@ -20,7 +20,16 @@ export class ItemViewComponent implements OnInit {
     this.url.params.subscribe(parameeter => {
        this.id = parameeter.esemeID;
     })
-    this.item = this.itemService.itemsFromService[this.id];
+
+    if (this.itemService.itemsFromService !=null) {
+      this.item = this.itemService.itemsFromService[this.id];
+    } else {
+    this.itemService.fetchItems().subscribe(vastus => {
+      this.itemService.itemsFromService = vastus;
+      this.item = this.itemService.itemsFromService[this.id];
+    });
+  }
+      
   }
 
   onAddToCart() {

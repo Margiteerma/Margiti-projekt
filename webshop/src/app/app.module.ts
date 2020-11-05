@@ -9,6 +9,7 @@ import { LeftMenuComponent } from './global/left-menu/left-menu.component';
 import { ItemListComponent } from './items/item-list/item-list.component';
 import { ItemViewComponent } from './items/item-view/item-view.component';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

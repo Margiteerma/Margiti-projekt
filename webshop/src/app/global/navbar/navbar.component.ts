@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/cart/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  cartCount = this.getCartCountValue();
+  
+  constructor( private cartService: CartService) { }
 
   ngOnInit(): void {
-  }
+    
+    this.cartService.cartChanged.subscribe(cartEsemed => {
+    this.cartCount = cartEsemed.length; 
+  })
 
+}
+getCartCountValue() {
+  if(JSON.parse(localStorage.getItem("esemed")) != null) {
+    return JSON.parse(localStorage.getItem("esemed")).length;   
+  } else {
+    return 0;   
+  }
+}
 }
