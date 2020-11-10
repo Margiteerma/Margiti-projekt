@@ -1,13 +1,18 @@
 <!-- <button (click)="onAllToDatabase()">Pane kõik andmebaasi</button> -->
 
 <div class="tooted">
-    <div class="toode" *ngFor="let item of items; let jarjekorranumber = index">
+    <div class="toode" 
+    *ngFor="let item of items; let jarjekorranumber = index"
+    (mouseenter)="onMouseEnter(item)"
+    (mouseleave)="onMouseLeave(item)"
+    >
         <div [routerLink]="['toode',jarjekorranumber]">
         <div> <b>{{item.category | uppercase}}</b> </div>
         <img src="{{item.imgSrc}}">
          <p>Toote nimetus: <br> {{item.title}} </p>
         <div>Hind: <br>{{item.price}} €</div>  
     </div>
-        <button (click)="onAddToCart(item)">Lisa ostukorvi</button>      
+        <button *ngIf="showAddToCart" 
+        class="lisa-nupp" (click)="onAddToCart(item)">+ LISA</button>      
     </div>
     </div>

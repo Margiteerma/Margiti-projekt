@@ -12,18 +12,19 @@ padding: 10px;
 border-radius: 10px;
 transform: scale(1.0);
 transition: .5s;
+border: 1px solid lightgray;
 }
 
 .toode:hover {
-    box-shadow: 0 10px 10px 10px rgb(7, 7, 7, 0.35);
+   /* box-shadow: 0 10px 10px 10px rgb(7, 7, 7, 0.35);
     transform: scale(1.1);
     transition: .5s;
-    cursor: zoom-in
+    cursor: zoom-in*/
 }
 
 .toode:hover img {
-    transform: scale(1.1);
-    transition: .5s;
+    /*transform: scale(1.1);
+    transition: .5s;*/
 
 }
 
@@ -31,4 +32,14 @@ transition: .5s;
  width: 220px;
  height: 220px; 
  padding: 40px;  
+}
+
+.lisa-nupp {
+    background-color: #299bdb;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    
 }

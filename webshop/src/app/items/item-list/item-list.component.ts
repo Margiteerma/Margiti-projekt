@@ -9,6 +9,7 @@ import { ItemService } from '../item.service';
 })
 export class ItemListComponent implements OnInit {
   items; 
+  showAddToCart = false;
 
   constructor(private itemservice: ItemService, 
     private cartService: CartService) { }
@@ -30,5 +31,13 @@ export class ItemListComponent implements OnInit {
   }
   onAllToDatabase() {
     this.itemservice.saveItems();
+  }
+
+  onMouseEnter() {
+    this.showAddToCart = true;
+  }
+
+  onMouseLeave() {
+    this.showAddToCart = false;
   }
 }

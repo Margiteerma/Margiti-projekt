@@ -1,46 +1,83 @@
 .navriba {
     height: 100px;
     width: 100%;
-    background-color: bisque;
+    background-color: #299bdb;
     opacity: 1.0;
     display: flex;
     justify-content: space-between;
     position: fixed; 
     z-index: 1;
-    
-    
+    color: white;
+   
 }
-.navriba img {
-    height: 50px;
-    width: 50px;
-    margin: 15px;
+
+.navbar-alumine {
+    margin-top: 68px;
+    height: 68px;
+    width: 100%;
+    background-color: white;
+    opacity: 1.0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    position: fixed; 
+    z-index: 1;
+    color: grey; 
+    font-weight: 600;
+    box-shadow: 0 5px 10px 5px rgb(7, 7, 7, 0.35);
+
+}
+
+.logo {
+    height: 90px;
+    width: 150px;
+    margin: -5px;
 }
  .navriba-lingid {
      display: flex;
-     margin-right: 500px;
+     margin-right: 0px;
       }
 
  .navriba-lingid div {
-          margin: 40px;
+          margin: 25px;
 
       }
  .navriba-lingid div:hover {
-        text-decoration: underline;
+       /* text-decoration: underline;*/
         cursor: pointer;
+        color: #299bdb;
 
     }
 
+ .navriba-lingid img {
+     height: 19px;
+     width: 19px;
+     filter: invert(58%) sepia(0%) saturate(0%) hue-rotate(344deg) brightness(86%) contrast(80%);
+     display: relative;
+ }
+
+  .navriba-lingid span {
+      position: relative;
+      top: -4px;
+      left: 5px;
+  }
+  .navriba-lingid div:hover img {
+    filter: invert(40%) sepia(100%) saturate(358%) hue-rotate(165deg) brightness(89%) contrast(91%);
+  }
+
    .toodete-arv {
-    background-color: green;
+    background-color: #299bdb;
     position: relative;
-    top: -30px;
+    top: -20px;
     border-radius: 50%;
     padding: 0 5px;
     font-size: 20px;
 }
 .ostukorv {
+    height: 50px;
+    width: 50px;
     cursor: pointer;
-    margin: 35px;
+    margin: 10px;
     opacity: 0.5;
 }
 .ostukorv:hover{
