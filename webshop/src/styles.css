@@ -17,16 +17,16 @@ body{
  }
 
 .nupp {
-  background-color: #4CAF50;
+  background-color: #299bdb;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 black;
+  border-radius: 40px;
+  /* box-shadow: 0 4px 4px 0 black; */
   opacity: 0.9;
 }
 

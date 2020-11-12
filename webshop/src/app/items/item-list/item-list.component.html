@@ -10,9 +10,12 @@
         <div> <b>{{item.category | uppercase}}</b> </div>
         <img src="{{item.imgSrc}}">
          <p>Toote nimetus: <br> {{item.title}} </p>
-        <div>Hind: <br>{{item.price}} €</div>  
+        <div class="price">Hind: <br>{{item.price}} €</div>  
     </div>
-        <button *ngIf="showAddToCart" 
-        class="lisa-nupp" (click)="onAddToCart(item)">+ LISA</button>      
+        <button *ngIf="item.showbutton" 
+        class="lisa-nupp" (click)="onAddToCart(item)">+ LISA</button>  
+        <div class="tyhimik" *ngIf="!item.showbutton"></div>  
+        
+        
     </div>
     </div>

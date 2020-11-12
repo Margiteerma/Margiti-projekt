@@ -4,10 +4,10 @@
   </div>
   <div class="navbar-alumine">
     <div class="navriba-lingid">
-      <div class="Ostunimekirjad">Ostunimekirjad</div>
+      <!-- <div class="Ostunimekirjad">Ostunimekirjad</div>
       <div class="Sooduspakkumised">Sooduspakkumised</div>
       <div class="Kohaletoimetamine">Kohaletoimetamine</div>
-      <div class="Retseptid">Retseptid</div>
+      <div class="Retseptid">Retseptid</div> -->
 
       <div>
         <img src="assets\information-button.svg"> 
@@ -15,8 +15,12 @@
         </div>
          </div>
          <div>
-         <span class="toodete-arv">{{cartCount}}</span>
-        <img class="ostukorv" src="assets\shopping-cart.png" routerLink="/cart">
-    </div>
-
+                 <!-- <img class="ostukorv" src="assets\shopping-cart.png" routerLink="/cart">
+    </div> -->
+    <button class="ostukorv-nupp" routerLink= "/cart">
+      <img src="assets\shopping-cart.svg">
+     <span>Vaata ostukorvi</span>
+        <span class="toodete-arv"> {{cartCount}}
+                  </span>
+                </button>
   </div>

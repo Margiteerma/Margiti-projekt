@@ -6,19 +6,30 @@
   height: 150px;
   /* padding-top: 30px; */
   /* padding-bottom: 100px; */
-  background-color: rgb(188, 238, 238); 
+  background-color: white; 
   /* display: flex; */
   /* justify-content: space-between; */
+  height: 40px;
+  border-top: 1px solid lightgray;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
-.firmast {
-  margin: 35px;
-  }
-  .kontakt {
-    margin: 35px;
-  }
-  .müügitingimused {
-    margin: 35px;
-  }
+.footer-link, .footer-text {
+  position: relative;
+  top: 5px;
+  margin: 0 5px;
+  color: gray;
+  font-size: 13px;
+
+}
+.footer-link:hover {
+  cursor: pointer;
+  color: rgb(106, 164, 219)
+}
+
+@media (max-width: 1050px) {
+  .jalus {
+   display: block;   
+   }
+}

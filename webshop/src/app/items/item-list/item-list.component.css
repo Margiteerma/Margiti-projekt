@@ -1,18 +1,20 @@
 .tooted {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 250px;
 
 }
 
 .toode {
 width: 300px;
-margin: 20px;
+margin: 5px;
 background-color: white;
 padding: 10px;
 border-radius: 10px;
 transform: scale(1.0);
 transition: .5s;
 border: 1px solid lightgray;
+height: 470px;
 }
 
 .toode:hover {
@@ -34,12 +36,32 @@ border: 1px solid lightgray;
  padding: 40px;  
 }
 
+.price {
+    position: absolute;
+    bottom: 10px;
+}
 .lisa-nupp {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
     background-color: #299bdb;
     border: none;
     border-radius: 10px;
     color: white;
     padding: 5px 10px;
     cursor: pointer;
+    height: 30px;
     
+}
+
+.tyhimik {
+    height: 30px;
+}
+@media (max-width: 1050px) {
+    .tooted {
+        padding-left: 20px;
+    }
+    .toode {
+        width: 90%;
+    }
 }
